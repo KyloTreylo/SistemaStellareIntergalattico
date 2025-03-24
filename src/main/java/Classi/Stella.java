@@ -1,5 +1,6 @@
 package Classi;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Stella extends CorpoCeleste{
     private ArrayList<Pianeta> pianeti = new ArrayList<>();
@@ -8,9 +9,21 @@ public class Stella extends CorpoCeleste{
         super(massa, posizioneX, posizioneY, codice, nome);
     }
 
-    public boolean addPianeta (){
-        System.out.println("Inserisci il nome del ");
+    public boolean aggiungiPianeta (){
+        System.out.println("Inserisci il nome del pianeta: ");
         pianeti.add(new Pianeta());
 
     }
+
+    public boolean rimuoviPianeta(){
+        System.out.println("Inserisci il nome del pianeta: ");
+        pianeti.remove(Pianeta());
+
+    }
+
+    private Pianeta cercaPianeta(Codice){
+    
+    }
+
+
 }

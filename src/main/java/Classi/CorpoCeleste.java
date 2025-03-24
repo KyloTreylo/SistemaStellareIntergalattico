@@ -1,15 +1,14 @@
 package Classi;
 public class CorpoCeleste {
     private double massa;
-    private int posizioneX;
-    private int posizioneY;
+    private int posizione[] = new int[2];
     private String codice;
     private String nome;
 
     public CorpoCeleste(double massa, int posizioneX, int posizioneY, String codice, String nome) {
         this.massa = massa;
-        this.posizioneX = posizioneX;
-        this.posizioneY = posizioneY;
+        this.posizione[0] = posizioneX;
+        this.posizione[1] = posizioneY;
         this.nome = nome;
     }
 
@@ -17,38 +16,20 @@ public class CorpoCeleste {
         return massa;
     }
 
-    public void setMassa(double massa) {
-        this.massa = massa;
-    }
-
     public int getPosizioneX() {
-        return posizioneX;
-    }
-
-    public void setPosizioneX(int posizioneX) {
-        this.posizioneX = posizioneX;
+        return posizione[0];
     }
 
     public int getPosizioneY() {
-        return posizioneY;
-    }
-
-    public void setPosizioneY(int posizioneY) {
-        this.posizioneY = posizioneY;
+        return posizione[1];
     }
 
     public String getCodice() {
         return codice;
     }
 
-    public void setCodice(String codice) {
-        this.codice = codice;
-    }
-
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+}

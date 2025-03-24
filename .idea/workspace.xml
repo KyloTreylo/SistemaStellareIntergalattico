@@ -4,64 +4,77 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2605500-78fd-4170-ae7a-e92ab71ff537" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    <list default="true" id="3a47426e-7037-4056-adb1-83939f23dd8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Diagramma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Classi/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Stella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Stella.java" afterDir="false" />
+    </list>
+    <list id="064c566b-2b09-46eb-95ed-09fdf0b8e5f7" name="Changes by Diego" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classi/CorpoCeleste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/CorpoCeleste.java" afterDir="false" />
+    </list>
+    <list id="e92aa1ca-f8fe-4ad1-975c-45a54f98bddb" name="Changes by User" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Stella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Stella.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2ula4yiz84JiBhBTPLstWyPhPZH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/Classi/Stella.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="3" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="10" end1="12" start2="11" end2="13" changelist="e92aa1ca-f8fe-4ad1-975c-45a54f98bddb" />
+        <range start1="15" end1="15" start2="16" end2="28" changelist="e92aa1ca-f8fe-4ad1-975c-45a54f98bddb" />
+      </ranges>
+    </file>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ulbNrgjkc0xz0l0DuJskU3Tzb9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/ennee/OneDrive/Documenti/GitHub/SistemaStellareGalattico"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -ea" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <predefined_log_file enabled="true" id="idea.log" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ennee\OneDrive\Documenti\GitHub\SistemaStellareGalattico" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c2605500-78fd-4170-ae7a-e92ab71ff537" name="Changes" comment="" />
-      <created>1742825429288</created>
+      <changelist id="3a47426e-7037-4056-adb1-83939f23dd8e" name="Changes" comment="" />
+      <created>1742826072925</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1742825429288</updated>
+      <updated>1742826072925</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
