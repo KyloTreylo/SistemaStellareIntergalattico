@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a47426e-7037-4056-adb1-83939f23dd8e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Diagramma.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Classi/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Stella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Stella.java" afterDir="false" />
-    </list>
-    <list id="064c566b-2b09-46eb-95ed-09fdf0b8e5f7" name="Changes by Diego" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Codice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Codice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Classi/CorpoCeleste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/CorpoCeleste.java" afterDir="false" />
-    </list>
-    <list id="e92aa1ca-f8fe-4ad1-975c-45a54f98bddb" name="Changes by User" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Luna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Luna.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Pianeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Pianeta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Stella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Stella.java" afterDir="false" />
     </list>
+    <list id="064c566b-2b09-46eb-95ed-09fdf0b8e5f7" name="Changes by Diego" comment="" />
+    <list id="e92aa1ca-f8fe-4ad1-975c-45a54f98bddb" name="Changes by User" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,14 +29,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/Classi/Stella.java">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="3" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
-        <range start1="10" end1="12" start2="11" end2="13" changelist="e92aa1ca-f8fe-4ad1-975c-45a54f98bddb" />
-        <range start1="15" end1="15" start2="16" end2="28" changelist="e92aa1ca-f8fe-4ad1-975c-45a54f98bddb" />
-      </ranges>
-    </file>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -54,13 +44,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/ennee/OneDrive/Documenti/GitHub/SistemaStellareGalattico"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ennee/OneDrive/Documenti/GitHub/SistemaStellareGalattico&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ennee\OneDrive\Documenti\GitHub\SistemaStellareGalattico" />
@@ -76,5 +67,16 @@
       <updated>1742826072925</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

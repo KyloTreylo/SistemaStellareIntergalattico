@@ -1,20 +1,32 @@
 package Classi;
 
 public class Codice {
-    private enum Lettera {
+    /*private enum Lettera {
         P,
         L
     };
+    private Lettera lettera;
+    */
 
     private Integer numeri;
-    private Lettera lettera;
+    private String lettera;
+
+    public  Codice (String passata, int  numeri ){
+        this.lettera = passata;
+        this.numeri = numeri;
+    }
 
     public String Tipo () {
-        return String.valueOf(lettera);
+        return lettera;
     }
 
     public String toString () {
-            return String.valueOf(lettera) + numeri;
+            return lettera + numeri;
+    }
+
+    public Codice nuovo (Codice ultimo){
+
+        return  new Codice(lettera , numeri+1);
     }
 
 
