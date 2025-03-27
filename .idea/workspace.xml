@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a47426e-7037-4056-adb1-83939f23dd8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/kibofplib-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Codice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Codice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Classi/CorpoCeleste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/CorpoCeleste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Luna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Luna.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Pianeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Pianeta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Stella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Stella.java" afterDir="false" />
     </list>
     <list id="064c566b-2b09-46eb-95ed-09fdf0b8e5f7" name="Changes by Diego" comment="" />
@@ -32,13 +30,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2ulbNrgjkc0xz0l0DuJskU3Tzb9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -48,13 +42,22 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ennee/OneDrive/Documenti/GitHub/SistemaStellareGalattico&quot;
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Documents/GitHub/SistemaStellareIntergalattico/lib/kibofplib-1.0.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ennee\OneDrive\Documenti\GitHub\SistemaStellareGalattico" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\GitHub\SistemaStellareIntergalattico\lib" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
