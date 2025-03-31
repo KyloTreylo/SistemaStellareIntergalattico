@@ -4,23 +4,34 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Pianeta extends CorpoCeleste{
-    private Codice codice;
-    private static Codice ultimoCodice= new Codice ( "P",00000);
-    private Stella  stella;
-    private double raggioOrbita;
 
-    private HashMap<Codice, Luna > lune = new HashMap<>();
+    /* -------- STATICI & COSTANTI UTIL --------- */
+    // Numero massimo di lune per ogni pianeta
+    private static final int MAX_LunePerPianeta = 5000;
+    // Codice dell'ultimo pianeta creato
+    private static Codice ultimoCodice = new Codice ( "P", 0);
 
+    /* -------- ATTRIBUTI ISTANZA --------- */
+    private final Stella stella;
+    private final double raggioOrbita;
+    // Mappa di tutte le lune del pianeta
+    private final HashMap<Codice, Luna > lune = new HashMap<>();
 
-    public Pianeta(double massa, int posizioneX, int posizioneY, String nome, Stella stella, double orbita) {
-        super(massa, posizioneX, posizioneY, nome);
+    /* -------- COSTRUTTORE --------- */
+    public Pianeta(String nome, double massa, int posizioneX, int posizioneY, Stella stella, double orbita) {
+        super(nome, massa, posizioneX, posizioneY, ultimoCodice.nuovo()); // Utilizzo il metodo Costruttore di CorpoCeleste che ho ereditato
         this.stella = stella;
         this.raggioOrbita  = orbita;
 
-        this.codice = ultimoCodice.nuovo(ultimoCodice);
         ultimoCodice = this.codice ;
     }
+    
+    
+    /*============================
+            METODI ISTANZA     
+    =============================*/ 
 
+    
     public boolean aggiungiLuna (){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Inserisci il nome della luna");
@@ -35,7 +46,7 @@ public class Pianeta extends CorpoCeleste{
         int raggio = scanner.nextInt();
 
         try{
-            Luna ciao = new Luna(massa, posX, posY, nome, raggio,  this.getNome(), this.codice);
+            Luna ciao = new Luna(nome, massa, posX, posY, raggio, this);
             lune.put(ciao.getCodice(), ciao );
             return true;
         }
@@ -44,9 +55,9 @@ public class Pianeta extends CorpoCeleste{
         }
     }
 
-    public boolean rimuoviLuna (Codice rimossione){
+    public boolean rimuoviLuna (Codice codice){
         try{
-            lune.remove(rimossione);
+            lune.remove(codice);
             return true;
             }
         catch (Exception e){
@@ -54,9 +65,9 @@ public class Pianeta extends CorpoCeleste{
         }
     }
 
-    public Luna cercaLuna (Codice cerca){
+    public Luna cercaLuna (Codice codice){
         if(!lune.isEmpty()) {
-            Luna temp = lune.get(cerca);
+            Luna temp = lune.get(codice);
                 if ( temp == null  ){
                     System.out.println("Nessuna luna con questo codice è stata trovata attorno a questo pianeta");
                     return null;
@@ -70,5 +81,47 @@ public class Pianeta extends CorpoCeleste{
         }
     }
 
+    public Codice getCodice() {
+        return codice;
+    }
+    
+    public boolean cercaDisponibilita(){
+        return lune.size() < MAX_LunePerPianeta;
+    }
 
+    /**
+     * Sovrascrive il metodo toString per fornire una rappresentazione del contenuto formattata come stringa.
+     * Contiene prima i dettagli del pianeta, seguiti da un elenco delle lune orbitanti.
+     * Generato con AI di IntelliJ IDEA Ultimate
+     */
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(String.format(
+                """
+                        ================================
+                                 Dettagli Pianeta
+                        ================================
+                        Nome: %s
+                        Massa: %.2f
+                        Posizione: (%d, %d)
+                        Codice: %s
+                        Raggio Orbita: %.2f km
+                        
+                        ----------------------------
+                               Lune Orbitanti
+                        ----------------------------
+                        """,
+                this.getNome(), this.getMassa(), this.getPosizioneX(), this.getPosizioneY(),
+                this.codice, this.raggioOrbita
+        ));
+
+        if (lune.isEmpty()) {
+            sb.append("Nessuna luna presente attorno a questo pianeta.\n");
+        } else {
+            lune.forEach((codice, luna) -> sb.append(String.format("Nome: %s, Codice: %s\n", luna.getNome(), codice)));
+        }
+
+        return sb.toString();
+    }
 }

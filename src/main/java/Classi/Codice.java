@@ -1,32 +1,42 @@
 package Classi;
 
-public class Codice {
-    /*private enum Lettera {
+/* Da decidere se usare
+    private enum Lettera {
         P,
         L
     };
-    private Lettera lettera;
-    */
+*/
 
-    private Integer numeri;
-    private String lettera;
+public class Codice {
 
+    /* -------- ATTRIBUTI ISTANZA --------- */
+    private final int numero;
+    private final String lettera;
+
+    /* -------- COSTRUTTORE --------- */
     public  Codice (String passata, int  numeri ){
         this.lettera = passata;
-        this.numeri = numeri;
+        this.numero = numeri;
     }
 
-    public String Tipo () {
+
+    /*============================
+            METODI ISTANZA
+    =============================*/
+
+    // Getters
+    public String getLettera() {
         return lettera;
     }
 
+    // Passiamo il codice pronto per essere stampato
     public String toString () {
-            return lettera + numeri;
+            return lettera + numero;
     }
 
-    public Codice nuovo (Codice ultimo){
-
-        return  new Codice(lettera , numeri+1);
+    // Generiamo un nuovo codice partendo da quello passato
+    public Codice nuovo (){
+        return  new Codice(lettera , numero +1);
     }
 
 

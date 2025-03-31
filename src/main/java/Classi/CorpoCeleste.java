@@ -1,29 +1,44 @@
 package Classi;
-public class CorpoCeleste {
-    private double massa;
-    private int posizione[] = new int[2];
-    private String nome;
 
-    public CorpoCeleste(double massa, int posizioneX, int posizioneY, String nome) {
+public class CorpoCeleste {
+
+    /* -------- ATTRIBUTI ISTANZA --------- */
+    final double massa;
+    final int[] posizione = new int[2];
+    String nome;
+    final Codice codice;
+
+    /* -------- COSTRUTTORE --------- */
+    public CorpoCeleste(String nome, double massa, int posizioneX, int posizioneY, Codice codice) {
         this.massa = massa;
+        this.codice = codice;
         this.posizione[0] = posizioneX;
         this.posizione[1] = posizioneY;
         this.nome = nome;
     }
 
-    public double getMassa() {
-        return massa;
-    }
 
+    /*============================
+            METODI ISTANZA
+    =============================*/
+
+
+    // Getters
     public int getPosizioneX() {
         return posizione[0];
     }
-
     public int getPosizioneY() {
         return posizione[1];
     }
     public String getNome() {
         return nome;
     }
+    public double getMassa() {
+        return massa;
+    }
 
+    // Setters
+    public void setNome(String nome) {
+        this.nome = nome;
+    } // Lasciamo la possibilità di modificare il nome di un Corpo Celeste
 }
