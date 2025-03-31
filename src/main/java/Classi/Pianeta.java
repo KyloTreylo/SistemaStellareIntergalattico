@@ -21,7 +21,7 @@ public class Pianeta extends CorpoCeleste{
     public Pianeta(String nome, double massa, int posizioneX, int posizioneY, Stella stella, double orbita) {
         super(nome, massa, posizioneX, posizioneY, ultimoCodice.nuovo()); // Utilizzo il metodo Costruttore di CorpoCeleste che ho ereditato
         this.stella = stella;
-        this.raggioOrbita  = orbita;
+        this.raggioOrbita = orbita;
 
         ultimoCodice = this.codice ;
     }
@@ -29,8 +29,13 @@ public class Pianeta extends CorpoCeleste{
     
     /*============================
             METODI ISTANZA     
-    =============================*/ 
+    =============================*/
 
+
+    // Getters
+    public int getNumeroLune() {
+        return lune.size();
+    }
     
     public boolean aggiungiLuna (){
         Scanner scanner = new Scanner(System.in);
@@ -80,11 +85,8 @@ public class Pianeta extends CorpoCeleste{
             return null;
         }
     }
-
-    public Codice getCodice() {
-        return codice;
-    }
     
+    // Metodo da usare prima di aggiungere un nuovo pianeta alla stella, controlla se ci sono meno di 5000 lune sul pianeta
     public boolean cercaDisponibilita(){
         return lune.size() < MAX_LunePerPianeta;
     }
@@ -107,19 +109,20 @@ public class Pianeta extends CorpoCeleste{
                         Posizione: (%d, %d)
                         Codice: %s
                         Raggio Orbita: %.2f km
+                        Stella: %s (%s)
                         
                         ----------------------------
                                Lune Orbitanti
                         ----------------------------
                         """,
                 this.getNome(), this.getMassa(), this.getPosizioneX(), this.getPosizioneY(),
-                this.codice, this.raggioOrbita
+                this.codice, this.raggioOrbita, stella.getNome(), stella.getCodice()
         ));
 
         if (lune.isEmpty()) {
             sb.append("Nessuna luna presente attorno a questo pianeta.\n");
         } else {
-            lune.forEach((codice, luna) -> sb.append(String.format("Nome: %s, Codice: %s\n", luna.getNome(), codice)));
+            lune.forEach((codice, luna) -> sb.append(String.format("Nome: %s (%s)\n", luna.getNome(), codice)));
         }
 
         return sb.toString();

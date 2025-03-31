@@ -24,6 +24,7 @@ public class Luna extends CorpoCeleste{
     =============================*/
 
 
+    // Getters
     public Codice getCodice() {
         return this.codice;
     }
@@ -49,8 +50,7 @@ public class Luna extends CorpoCeleste{
                         ----------------------------
                           Pianeta Associato
                         ----------------------------
-                        Nome: %s
-                        Codice Pianeta: %s
+                        Nome: %s (%s)
                         """,
                 this.getNome(), this.getMassa(), this.getPosizioneX(), this.getPosizioneY(),
                 this.codice, this.raggioOrbita, pianeta.getNome(), pianeta.getCodice()

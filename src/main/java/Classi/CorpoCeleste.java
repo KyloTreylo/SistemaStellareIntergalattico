@@ -36,6 +36,9 @@ public class CorpoCeleste {
     public double getMassa() {
         return massa;
     }
+    public Codice getCodice() {
+        return codice;
+    }
 
     // Setters
     public void setNome(String nome) {
