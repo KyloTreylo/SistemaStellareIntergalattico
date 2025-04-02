@@ -1,6 +1,10 @@
 # Gestione del Sistema Stellare
 ### Descrizione
-Questo progetto Java consente la gestione di un sistema stellare composto da corpi celesti come stelle, pianeti e lune. È pensato per simulare le interazioni principali tra gli elementi astronomici e fornire funzionalità per la modifica e l'analisi dinamica del sistema. Il codice è progettato con un'architettura modulare, facilitando l'espansione e la manutenzione.
+Dopo millenni di attesa, il Consiglio Intergalattico ha finalmente accettato la richiesta del nostro popolo di entrare a far parte dell'Impero Galattico. Grazie al lavoro straordinario del nostro **team ufficiale di programmatori**, siamo riusciti a sviluppare con successo un programma Java efficiente e accurato per soddisfare la richiesta del censimento completo dei corpi celesti del nostro sistema stellare.
+Il programma, progettato nei minimi dettagli, è stato creato per catalogare e gestire le informazioni relative a stelle, pianeti e lune, calcolando accuratamente la posizione del centro di massa complessivo del sistema. Questi **dati** sono stati inviati con precisione al Consiglio Intergalattico, permettendo l’inizio della costruzione dell’ambasciata imperiale nel luogo esatto calcolato dal programma.
+Grazie a questo risultato, il nostro sistema stellare è ora ufficialmente parte dell’Impero, e noi programmatori abbiamo ottenuto grandi onorificenze e ricompense **(non è vero)** dai governatori planetari.
+Questa repository contiene l’implementazione del progetto.
+
 ### Funzionalità principali
 - **Gestione delle Stelle**:
     - Creazione di stelle con massa e posizione definite.
