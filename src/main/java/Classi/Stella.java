@@ -86,9 +86,38 @@ public class Stella extends CorpoCeleste{
         return new double[]{centroX, centroY};
     }
 
-    public boolean aggiungiPianeta(){
-        // Da gestire l'input utente e poi inserire nella HashMap il nuovo pianeta
-        return false;
+    /**
+     * Aggiunge un nuovo pianeta al sistema. Richiede l'inserimento dei dati del pianeta.
+     *
+     * @return {@code true} se il pianeta è stato aggiunto con successo, {@code false} in caso di errore
+     */
+    public boolean aggiungiPianeta() {
+
+        try {
+            Pianeta nuovoPianeta;
+
+            //nome
+            String nome = InputData.readString("Inserisci il nome del pianeta: ", true);
+            //massa
+            double massa = InputData.readDouble("Inserisci la massa del tuo pianeta (kg): ");
+            //posizione x
+            int posizioneX = InputData.readInteger("Inserisci la posizione x del tuo pianeta (assoluta): ");
+            //posizione y
+            int posizioneY = InputData.readInteger("Inserisci la posizione y del tuo pianeta (assoluta): ");
+            //orbita
+            double orbita = InputData.readDouble("Inserisci l'orbita del tuo pianeta: ");
+
+            nuovoPianeta = new Pianeta(nome , massa , posizioneX , posizioneY , this , orbita);
+            pianeti.put(nuovoPianeta.getCodice(), nuovoPianeta);
+
+            return true;
+
+
+        } catch (Exception e) {
+            System.out.println("Errore: " + e.getMessage());
+            return false;
+        }
+
     }
 
     /**
@@ -312,7 +341,7 @@ public class Stella extends CorpoCeleste{
                                  Dettagli Stella
                         ================================
                         Nome: %s
-                        Massa: %.2f
+                        Massa: %.2f kg
                         Posizione: (%d, %d)
                        \s
                         ----------------------------
@@ -327,31 +356,3 @@ public class Stella extends CorpoCeleste{
     }
 }
 
-/*package Classi;
-import java.util.HashMap;
-import it.kibo.fp.lib.InputData;
-
-public class Stella{
-    private HashMap<String, String> pianeti;
-
-    public Stella(){
-        pianeti = new HashMap<>();
-    }
-
-    public boolean codiceValido(String codice){
-        return codice.matches("^P\\d+$");
-    }
-
-    public void cercaPianeta(){
-        codice = InputData.readChar("Inserisci il codice del pianeta da cercare :");
-        while(!codiceValido(codice)){
-            System.out.print("Codice non valido! Deve iniziare con 'P seguito dai numeri");
-            codice = InputData.readChar("Reinserisci il codice: ");
-
-        }
-        if(pianeti.containsKey(codice)){
-            System.out.println("Pianeta trovato :" + pianeti.get(codice));
-        }else{System.out.println("Pianeta non è presente in questo sistema");}
-    }
-
-}*/
