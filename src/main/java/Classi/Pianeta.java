@@ -1,8 +1,12 @@
 package Classi;
 
-import java.util.HashMap;
-import java.util.Scanner;
+import it.kibo.fp.lib.InputData;
 
+import java.util.HashMap;
+
+/**
+ * Rappresenta un corpo celeste, nello specifico un Pianeta
+ */
 public class Pianeta extends CorpoCeleste{
 
     /* -------- STATICI & COSTANTI UTIL --------- */
@@ -18,12 +22,23 @@ public class Pianeta extends CorpoCeleste{
     private final HashMap<Codice, Luna > lune = new HashMap<>();
 
     /* -------- COSTRUTTORE --------- */
-    public Pianeta(String nome, double massa, int posizioneX, int posizioneY, Stella stella, double orbita) {
+
+    /**
+     * Costruisce un nuovo oggetto {@code Pianeta}.
+     *
+     * @param nome         Il nome del pianeta.
+     * @param massa        La massa del pianeta.
+     * @param posizioneX   La posizione X nel sistema di riferimento.
+     * @param posizioneY   La posizione Y nel sistema di riferimento.
+     * @param stella       La stella attorno alla quale orbita il pianeta.
+     * @param raggioOrbita La distanza orbitale tra il pianeta e la stella in kilometri.
+     */
+    public Pianeta(String nome, double massa, int posizioneX, int posizioneY, Stella stella, double raggioOrbita) {
         super(nome, massa, posizioneX, posizioneY, ultimoCodice.nuovo()); // Utilizzo il metodo Costruttore di CorpoCeleste che ho ereditato
         this.stella = stella;
-        this.raggioOrbita = orbita;
+        this.raggioOrbita = raggioOrbita;
 
-        ultimoCodice = this.codice ;
+        ultimoCodice = this.codice;
     }
     
     
@@ -33,61 +48,79 @@ public class Pianeta extends CorpoCeleste{
 
 
     // Getters
+
+    /**
+     * Ottiene il numero di lune che orbitano attorno al pianeta.
+     *
+     * @return Il numero totale di lune.
+     */
     public int getNumeroLune() {
         return lune.size();
     }
-    
-    public boolean aggiungiLuna (){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Inserisci il nome della luna");
-        String nome = scanner.nextLine();
-        System.out.println("Inserisci la posizione X della luna");
-        int posX = scanner.nextInt();
-        System.out.println("Inserisci la posizione Y della luna");
-        int posY = scanner.nextInt();
-        System.out.println("Inserisci la massa della luna");
-        int massa = scanner.nextInt();
-        System.out.println("Inserisci il raggio dell'orbita della luna");
-        int raggio = scanner.nextInt();
 
-        try{
-            Luna ciao = new Luna(nome, massa, posX, posY, raggio, this);
-            lune.put(ciao.getCodice(), ciao );
-            return true;
-        }
-        catch (Exception e){
-            return false;
-        }
+    /**
+     * Restituisce una mappa contenente tutte le lune che orbitano attorno al pianeta.
+     *
+     * @return Una {@code HashMap} delle lune con i loro codici corrispondenti.
+     */
+    public HashMap<Codice, Luna> getLune() {
+        return lune;
     }
 
-    public boolean rimuoviLuna (Codice codice){
-        try{
+    /**
+     * Permette di aggiungere una nuova luna al pianeta attraverso input dell'utente.
+     */
+    public void aggiungiLuna() {
+        // Inserimento dati per la luna
+        String nome = InputData.readString("Inserisci il nome della luna: ", true);
+        double massa = InputData.readDouble("Inserisci la massa della luna (kg): ");
+        int posizioneX = InputData.readInteger("Inserisci la posizione X della luna (assoluta): ");
+        int posizioneY = InputData.readInteger("Inserisci la posizione Y della luna (assoluta): ");
+        double raggioOrbita = InputData.readDouble("Inserisci il raggio dell'orbita della luna: ");
+
+        Luna nuovaLuna = new Luna(nome, massa, posizioneX, posizioneY, raggioOrbita, this);
+        this.lune.put(nuovaLuna.getCodice(), nuovaLuna);
+    }
+
+    /**
+     * Rimuove una luna associata al codice specificato dalla lista di lune del pianeta.
+     *
+     * @param codice Il codice identificativo della luna.
+     * @return {@code true} se la luna è stata correttamente rimossa, {@code false} in caso contrario.
+     */
+    public boolean rimuoviLuna(Codice codice) {
+        try {
             lune.remove(codice);
+            System.out.println("Luna rimossa con successo.");
             return true;
-            }
-        catch (Exception e){
+        } catch (Exception e) {
             return false;
         }
     }
 
-    public Luna cercaLuna (Codice codice){
-        if(!lune.isEmpty()) {
-            Luna temp = lune.get(codice);
-                if ( temp == null  ){
-                    System.out.println("Nessuna luna con questo codice è stata trovata attorno a questo pianeta");
-                    return null;
-                }else{
-                    return temp;
-                }
-        }else
-        {
-            System.out.println("Questo pianeta non ha lune orbitanti attorno a se, quindi la luna che stai cercando non puù essere qua");
-            return null;
+    /**
+     * Cerca una luna tramite il suo codice identificativo.
+     *
+     * @param codice Il codice identificativo della luna da cercare.
+     * @return La {@code Luna} corrispondente al codice se presente, altrimenti {@code null}.
+     */
+    public Luna cercaLuna(Codice codice) {
+        for (Codice key : this.lune.keySet()) {
+            if (key.equals(codice)) {
+                return this.lune.get(key);
+            }
         }
+        return null;
     }
-    
-    // Metodo da usare prima di aggiungere un nuovo pianeta alla stella, controlla se ci sono meno di 5000 lune sul pianeta
-    public boolean cercaDisponibilita(){
+
+    // Metodo da usare prima di aggiungere una luna al pianeta, controlla se ci sono meno di 5000 lune sul pianeta
+
+    /**
+     * Verifica se è possibile aggiungere ulteriori lune al pianeta.
+     *
+     * @return {@code true} se il numero di lune è inferiore al limite massimo, {@code false} altrimenti.
+     */
+    public boolean cercaDisponibilita() {
         return lune.size() < MAX_LunePerPianeta;
     }
 

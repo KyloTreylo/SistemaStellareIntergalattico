@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a47426e-7037-4056-adb1-83939f23dd8e" name="Changes" comment="Messo in ordine il codice e messo tanti commenti qui e là, ho unificato i metodi tra le classi simili e ho spostato codice nella classe CorpoCeleste, anche la stella ne avrà uno, così se poi un giorno sarà da aggiungere la funzionalità di più sistemi stellari sarà pronto. Creazione tramite AI dei metodi toString() di Pianeta e Luna">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ennee.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="3a47426e-7037-4056-adb1-83939f23dd8e" name="Changes" comment="Creazione dei metodi mancanti e aggiunta di tutti i commenti e JavaDoc con il supporto della AI di IntelliJ. Sono state controllate a mano tutte le JavaDoc generate.&#10;Ho colorato la console.&#10;Il programma è stato per intero controllato">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Classi/ConsoleUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Codice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Codice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Classi/CorpoCeleste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/CorpoCeleste.java" afterDir="false" />
@@ -14,10 +13,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Pianeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Pianeta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Stella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Stella.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+    </list>
+    <list id="f9eb7317-35b9-48f8-a65b-be5f55561f2f" name="Changes by Brandon" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classi/Stella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classi/Stella.java" afterDir="false" />
     </list>
     <list id="064c566b-2b09-46eb-95ed-09fdf0b8e5f7" name="Changes by Diego" comment="" />
-    <list id="e92aa1ca-f8fe-4ad1-975c-45a54f98bddb" name="Changes by User" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,8 +45,39 @@
     &quot;accountId&quot;: &quot;8ef9a1c3-4d45-4e79-8b46-919c957dde25&quot;
   }
 }</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/Classi/Stella.java">
+      <ranges>
+        <range start1="5" end1="5" start2="5" end2="8" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="8" end1="9" start2="11" end2="14" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="10" end1="12" start2="15" end2="20" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="14" end1="15" start2="22" end2="26" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="18" end1="18" start2="29" end2="38" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="19" end1="20" start2="39" end2="41" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="28" end1="29" start2="49" end2="56" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="32" end1="32" start2="59" end2="87" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="33" end1="36" start2="88" end2="120" changelist="f9eb7317-35b9-48f8-a65b-be5f55561f2f" />
+        <range start1="38" end1="38" start2="122" end2="128" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="39" end1="40" start2="129" end2="156" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="42" end1="45" start2="158" end2="226" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="47" end1="53" start2="228" end2="292" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="55" end1="63" start2="294" end2="304" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="66" end1="67" start2="307" end2="314" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="96" end1="97" start2="343" end2="344" changelist="f9eb7317-35b9-48f8-a65b-be5f55561f2f" />
+        <range start1="98" end1="99" start2="345" end2="346" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="100" end1="100" start2="347" end2="348" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="101" end1="102" start2="349" end2="350" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="103" end1="104" start2="351" end2="352" changelist="3a47426e-7037-4056-adb1-83939f23dd8e" />
+        <range start1="110" end1="116" start2="358" end2="358" changelist="f9eb7317-35b9-48f8-a65b-be5f55561f2f" />
+        <range start1="117" end1="138" start2="359" end2="359" changelist="f9eb7317-35b9-48f8-a65b-be5f55561f2f" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Security Analysis" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -56,29 +87,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ennee/OneDrive/Documenti/GitHub/SistemaStellareGalattico/lib/kibofplib-1.0.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.spelling",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ennee/OneDrive/Documenti/GitHub/SistemaStellareGalattico/lib/kibofplib-1.0.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.spelling&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ennee\OneDrive\Documenti\GitHub\SistemaStellareGalattico" />
@@ -86,6 +117,26 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Documents\GitHub\SistemaStellareIntergalattico\lib" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Classi.Main" />
+      <module name="SistemaStellareIntergalattico" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Classi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -104,7 +155,8 @@
       <option name="presentableId" value="Default" />
       <updated>1742826072925</updated>
       <workItem from="1743414061502" duration="4620000" />
-      <workItem from="1743424817785" duration="6934000" />
+      <workItem from="1743424817785" duration="7234000" />
+      <workItem from="1743584680672" duration="12720000" />
     </task>
     <task id="LOCAL-00001" summary="Messo in ordine il codice e messo tanti commenti qui e là, ho unificato i metodi tra le classi simili e ho spostato codice nella classe CorpoCeleste, anche la stella ne avrà uno, così se poi un giorno sarà da aggiungere la funzionalità di più sistemi stellari sarà pronto. Creazione tramite AI dei metodi toString() di Pianeta e Luna">
       <option name="closed" value="true" />
@@ -114,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743418593441</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Con Brandon a fianco abbiamo creato il main e sistemato la classe codice aggiungendo equals e valueOf, abbiamo concluso il metodo di ricerca pianeti">
+      <option name="closed" value="true" />
+      <created>1743432095173</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743432095173</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +193,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Messo in ordine il codice e messo tanti commenti qui e là, ho unificato i metodi tra le classi simili e ho spostato codice nella classe CorpoCeleste, anche la stella ne avrà uno, così se poi un giorno sarà da aggiungere la funzionalità di più sistemi stellari sarà pronto. Creazione tramite AI dei metodi toString() di Pianeta e Luna" />
-    <option name="LAST_COMMIT_MESSAGE" value="Messo in ordine il codice e messo tanti commenti qui e là, ho unificato i metodi tra le classi simili e ho spostato codice nella classe CorpoCeleste, anche la stella ne avrà uno, così se poi un giorno sarà da aggiungere la funzionalità di più sistemi stellari sarà pronto. Creazione tramite AI dei metodi toString() di Pianeta e Luna" />
+    <MESSAGE value="Con Brandon a fianco abbiamo creato il main e sistemato la classe codice aggiungendo equals e valueOf, abbiamo concluso il metodo di ricerca pianeti" />
+    <MESSAGE value="Creazione dei metodi mancanti e aggiunta di tutti i commenti e JavaDoc con il supporto della AI di IntelliJ. Sono state controllate a mano tutte le JavaDoc generate.&#10;Ho colorato la console.&#10;Il programma è stato per intero controllato" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creazione dei metodi mancanti e aggiunta di tutti i commenti e JavaDoc con il supporto della AI di IntelliJ. Sono state controllate a mano tutte le JavaDoc generate.&#10;Ho colorato la console.&#10;Il programma è stato per intero controllato" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Classi/Stella.java</url>
+          <line>182</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Classi/Stella.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
